@@ -9,11 +9,7 @@ import { AiFillHome } from "react-icons/ai";
 import { FaPlusSquare } from "react-icons/fa";
 
 const Navbar = () => {
-  const { IsOpen, setIsOpen, dark, setDark  } = useContext(UserContext);
-
-  const toggleMenu = () => {
-    setIsOpen(!IsOpen);
-  };
+  const { IsOpen,  dark, setDark  } = useContext(UserContext);
   const toggleLight = () => {
     setDark(!dark);
   };
